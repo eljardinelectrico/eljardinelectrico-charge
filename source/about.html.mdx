@@ -1,0 +1,27 @@
+import Layout from './components/layout.html.jsx';
+
+export const meta = {
+  id: "about",
+  title: "Acerca",
+  path: "/about"
+}
+
+export const layout = (props) => <Layout currentPageID={meta.id} {...props} />
+
+<main>
+    <div className="hero">
+        <div className="about-picture">
+            <img className="cutout" src="/images/about.png" />
+        </div>
+        <div className="about-message">
+            <video autoPlay muted>
+                <source src="/videos/logo-middle.mp4" type="video/mp4" />
+            </video>
+            <p>El Jardín Eléctrico es un lugar mágico</p>
+            <p>donde puedes encontrar música y personajes fantásticos…</p>
+            <p>abre el portón</p>
+            <p>y entra con nosotrxs</p>
+            <p>a este mundo lleno de sorpresas y risas</p>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,32 @@
+import Layout from './components/layout.html.jsx';
+
+export const meta = {
+  id: "contact",
+  title: "Contacto",
+  path: "/contact"
+}
+
+export const layout = (props) => <Layout currentPageID={meta.id} {...props} />
+
+<main>
+    <div className="hero">
+        <div className="contact-form">
+            <form action="https://gethtmlForm.io/f/f173f000-7f4a-4fde-a9be-c397ca037eef" method="POST">
+                <label htmlFor="name" style={{color: "var(--party-background-1)"}}>Nombre</label>
+                <input type="text" name="name" required />
+                <label htmlFor="name" style={{color: "var(--party-background-2)"}}>E-mail</label>
+                <input type="email" name="email" required />
+                <label htmlFor="name" style={{color: "var(--party-background-3)"}}>Mensaje</label>
+                <textarea name="message" rows="5" required></textarea>
+                <button type="submit">Enviar!</button>
+            </form>
+        </div>
+        <div className="contact-message">
+            <p>Para cualquier consulta,</p>
+            <p>duda o peticion</p>
+            <p>no dudes en</p>
+            <p>ponerte en contacto</p>
+            <p>con nosotrxs!</p>
+        </div>
+    </div>
+</main>

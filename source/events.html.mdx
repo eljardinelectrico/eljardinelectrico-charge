@@ -1,0 +1,25 @@
+import Layout from './components/layout.html.jsx';
+
+export const meta = {
+  id: "events",
+  title: "Agenda",
+  path: "/events"
+}
+
+export const layout = (props) => <Layout currentPageID={meta.id} head={
+    <>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/fullcalendar@5.1.0/main.min.css"
+        />
+        <script src="https://unpkg.com/fullcalendar@5.1.0/main.min.js"></script>
+        <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
+        <script src="/javascripts/calendar.js"></script>
+    </>
+} {...props} />
+
+<div className="calendar"></div>
+
+
+

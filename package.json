@@ -1,0 +1,26 @@
+{
+  "name": "eljardinelectrico-charge",
+  "version": "1.0.0",
+  "description": "El Jardín Eléctrico Site",
+  "scripts": {
+    "start": "charge serve source",
+    "build": "charge build source target"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eljardinelectrico/eljardinelectrico-charge.git"
+  },
+  "keywords": [
+    "static",
+    "site"
+  ],
+  "author": "aynik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eljardinelectrico/eljardinelectrico-charge/issues"
+  },
+  "homepage": "https://github.com/eljardinelectrico/eljardinelectrico-charge#readme",
+  "devDependencies": {
+    "@static/charge": "^1.7.0"
+  }
+}

@@ -1,0 +1,40 @@
+import Layout from './components/layout.html.jsx';
+
+export const meta = {
+  id: "videos",
+  title: "Videos",
+  path: "/videos"
+}
+
+export const layout = (props) => <Layout currentPageID={meta.id} head={
+    <>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="/javascripts/youtube.js"></script>
+    </>
+} {...props} />
+
+<main>
+    <div className="hero">
+        <div className="video-player">
+          <div className="video-player__playing">
+            <div className="embed-container">
+              <div id="player"></div>
+            </div>
+          </div>
+          <div className="video-player__thumbs">
+            <div data-video="OfCHJQTjO3c" className="video-thumb active">
+                <img src="https://img.youtube.com/vi/OfCHJQTjO3c/hqdefault.jpg" />
+            </div>
+            <div data-video="8cHHUdf_oO4" className="video-thumb">
+                <img src="https://img.youtube.com/vi/8cHHUdf_oO4/hqdefault.jpg" />
+            </div>
+            <div data-video="fmNBdwNjw1Y" className="video-thumb">
+                <img src="https://img.youtube.com/vi/fmNBdwNjw1Y/hqdefault.jpg" />
+            </div>
+            <div data-video="M1nJ0YjSywk" className="video-thumb">
+                <img src="https://img.youtube.com/vi/M1nJ0YjSywk/hqdefault.jpg" />
+            </div>
+          </div>
+        </div>
+    </div>
+</main>
