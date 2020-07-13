@@ -4,7 +4,7 @@ export default ({ pages, data }) => {
   const indexPage = pages.find((page) => page.meta.id === "index");
   const navItems = pages
     .filter((page) => page.meta.id !== "index")
-    .sort((current, next) => (current.meta.title < next.meta.title ? 1 : -1))
+    .sort((current, next) => (current.meta.index > next.meta.index ? 1 : -1))
     .map((page, index) => {
       return (
         <li key={page.path}>
